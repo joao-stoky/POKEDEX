@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalhes do Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .card-detalhe {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+
+    .card-detalhe img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .card-detalhe h2 {
+      margin-top: 20px;
+      font-size: 32px;
+    }
+
+    .card-detalhe p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="pokemon-detalhe" class="card-detalhe">Carregando...</div>
+
+  <script>
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    function parseCSV(csv) {
+      const lines = csv.split('\n').filter(line => line.trim() !== '');
+      const headers = lines[0].split(',').map(h => h.trim());
+      const data = lines.slice(1).map(line => {
+        const values = line.split(',').map(v => v.trim());
+        const entry = {};
+        headers.forEach((header, i) => {
+          entry[header] = values[i];
+        });
+        return entry;
+      });
+      return data;
+    }
+
+    const id = getQueryParam('id');
+
+    fetch('dados.csv')  // troque para o nome real do seu CSV
+      .then(response => response.text())
+      .then(csv => {
+        const pokemons = parseCSV(csv);
+        const pokemon = pokemons.find(p => p.ID === id);
+
+        const container = document.getElementById('pokemon-detalhe');
+
+        if (pokemon) {
+          container.innerHTML = `
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.ID}.png" alt="${pokemon.Nome}">
+            <h2>${pokemon.Nome}</h2>
+            <p><strong>ID:</strong> ${pokemon.ID}</p>
+            <!-- Você pode adicionar mais campos aqui -->
+          `;
+        } else {
+          container.innerHTML = '<p>Pokémon não encontrado.</p>';
+        }
+      })
+      .catch(() => {
+        document.getElementById('pokemon-detalhe').innerHTML = '<p>Erro ao carregar dados.</p>';
+      });
+  </script>
+</body>
+</html>

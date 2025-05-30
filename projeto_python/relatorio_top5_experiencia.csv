@@ -1,0 +1,6 @@
+ID,Nome,Experiência Base,HP,Ataque,Defesa,Tipos
+6,Charizard,267,78,84,78,"['Fire', 'Flying']"
+9,Blastoise,265,79,83,100,['Water']
+3,Venusaur,263,80,82,83,"['Grass', 'Poison']"
+62,Poliwrath,255,90,95,95,"['Water', 'Fighting']"
+34,Nidoking,253,81,102,77,"['Poison', 'Ground']"

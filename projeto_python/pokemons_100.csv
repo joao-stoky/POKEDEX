@@ -1,0 +1,101 @@
+ID,Nome,Experiência Base,Tipos,HP,Ataque,Defesa,Categoria
+1,Bulbasaur,64,"['Grass', 'Poison']",45,49,49,Médio
+2,Ivysaur,142,"['Grass', 'Poison']",60,62,63,Forte
+3,Venusaur,263,"['Grass', 'Poison']",80,82,83,Forte
+4,Charmander,62,['Fire'],39,52,43,Médio
+5,Charmeleon,142,['Fire'],58,64,58,Forte
+6,Charizard,267,"['Fire', 'Flying']",78,84,78,Forte
+7,Squirtle,63,['Water'],44,48,65,Médio
+8,Wartortle,142,['Water'],59,63,80,Forte
+9,Blastoise,265,['Water'],79,83,100,Forte
+10,Caterpie,39,['Bug'],45,30,35,Fraco
+11,Metapod,72,['Bug'],50,20,55,Médio
+12,Butterfree,198,"['Bug', 'Flying']",60,45,50,Forte
+13,Weedle,39,"['Bug', 'Poison']",40,35,30,Fraco
+14,Kakuna,72,"['Bug', 'Poison']",45,25,50,Médio
+15,Beedrill,178,"['Bug', 'Poison']",65,90,40,Forte
+16,Pidgey,50,"['Normal', 'Flying']",40,45,40,Médio
+17,Pidgeotto,122,"['Normal', 'Flying']",63,60,55,Forte
+18,Pidgeot,216,"['Normal', 'Flying']",83,80,75,Forte
+19,Rattata,51,['Normal'],30,56,35,Médio
+20,Raticate,145,['Normal'],55,81,60,Forte
+21,Spearow,52,"['Normal', 'Flying']",40,60,30,Médio
+22,Fearow,155,"['Normal', 'Flying']",65,90,65,Forte
+23,Ekans,58,['Poison'],35,60,44,Médio
+24,Arbok,157,['Poison'],60,95,69,Forte
+25,Pikachu,112,['Electric'],35,55,40,Forte
+26,Raichu,243,['Electric'],60,90,55,Forte
+27,Sandshrew,60,['Ground'],50,75,85,Médio
+28,Sandslash,158,['Ground'],75,100,110,Forte
+29,Nidoran-f,55,['Poison'],55,47,52,Médio
+30,Nidorina,128,['Poison'],70,62,67,Forte
+31,Nidoqueen,253,"['Poison', 'Ground']",90,92,87,Forte
+32,Nidoran-m,55,['Poison'],46,57,40,Médio
+33,Nidorino,128,['Poison'],61,72,57,Forte
+34,Nidoking,253,"['Poison', 'Ground']",81,102,77,Forte
+35,Clefairy,113,['Fairy'],70,45,48,Forte
+36,Clefable,242,['Fairy'],95,70,73,Forte
+37,Vulpix,60,['Fire'],38,41,40,Médio
+38,Ninetales,177,['Fire'],73,76,75,Forte
+39,Jigglypuff,95,"['Normal', 'Fairy']",115,45,20,Médio
+40,Wigglytuff,218,"['Normal', 'Fairy']",140,70,45,Forte
+41,Zubat,49,"['Poison', 'Flying']",40,45,35,Fraco
+42,Golbat,159,"['Poison', 'Flying']",75,80,70,Forte
+43,Oddish,64,"['Grass', 'Poison']",45,50,55,Médio
+44,Gloom,138,"['Grass', 'Poison']",60,65,70,Forte
+45,Vileplume,245,"['Grass', 'Poison']",75,80,85,Forte
+46,Paras,57,"['Bug', 'Grass']",35,70,55,Médio
+47,Parasect,142,"['Bug', 'Grass']",60,95,80,Forte
+48,Venonat,61,"['Bug', 'Poison']",60,55,50,Médio
+49,Venomoth,158,"['Bug', 'Poison']",70,65,60,Forte
+50,Diglett,53,['Ground'],10,55,25,Médio
+51,Dugtrio,149,['Ground'],35,100,50,Forte
+52,Meowth,58,['Normal'],40,45,35,Médio
+53,Persian,154,['Normal'],65,70,60,Forte
+54,Psyduck,64,['Water'],50,52,48,Médio
+55,Golduck,175,['Water'],80,82,78,Forte
+56,Mankey,61,['Fighting'],40,80,35,Médio
+57,Primeape,159,['Fighting'],65,105,60,Forte
+58,Growlithe,70,['Fire'],55,70,45,Médio
+59,Arcanine,194,['Fire'],90,110,80,Forte
+60,Poliwag,60,['Water'],40,50,40,Médio
+61,Poliwhirl,135,['Water'],65,65,65,Forte
+62,Poliwrath,255,"['Water', 'Fighting']",90,95,95,Forte
+63,Abra,62,['Psychic'],25,20,15,Médio
+64,Kadabra,140,['Psychic'],40,35,30,Forte
+65,Alakazam,250,['Psychic'],55,50,45,Forte
+66,Machop,61,['Fighting'],70,80,50,Médio
+67,Machoke,142,['Fighting'],80,100,70,Forte
+68,Machamp,253,['Fighting'],90,130,80,Forte
+69,Bellsprout,60,"['Grass', 'Poison']",50,75,35,Médio
+70,Weepinbell,137,"['Grass', 'Poison']",65,90,50,Forte
+71,Victreebel,221,"['Grass', 'Poison']",80,105,65,Forte
+72,Tentacool,67,"['Water', 'Poison']",40,40,35,Médio
+73,Tentacruel,180,"['Water', 'Poison']",80,70,65,Forte
+74,Geodude,60,"['Rock', 'Ground']",40,80,100,Médio
+75,Graveler,137,"['Rock', 'Ground']",55,95,115,Forte
+76,Golem,223,"['Rock', 'Ground']",80,120,130,Forte
+77,Ponyta,82,['Fire'],50,85,55,Médio
+78,Rapidash,175,['Fire'],65,100,70,Forte
+79,Slowpoke,63,"['Water', 'Psychic']",90,65,65,Médio
+80,Slowbro,172,"['Water', 'Psychic']",95,75,110,Forte
+81,Magnemite,65,"['Electric', 'Steel']",25,35,70,Médio
+82,Magneton,163,"['Electric', 'Steel']",50,60,95,Forte
+83,Farfetchd,132,"['Normal', 'Flying']",52,90,55,Forte
+84,Doduo,62,"['Normal', 'Flying']",35,85,45,Médio
+85,Dodrio,165,"['Normal', 'Flying']",60,110,70,Forte
+86,Seel,65,['Water'],65,45,55,Médio
+87,Dewgong,166,"['Water', 'Ice']",90,70,80,Forte
+88,Grimer,65,['Poison'],80,80,50,Médio
+89,Muk,175,['Poison'],105,105,75,Forte
+90,Shellder,61,['Water'],30,65,100,Médio
+91,Cloyster,184,"['Water', 'Ice']",50,95,180,Forte
+92,Gastly,62,"['Ghost', 'Poison']",30,35,30,Médio
+93,Haunter,142,"['Ghost', 'Poison']",45,50,45,Forte
+94,Gengar,250,"['Ghost', 'Poison']",60,65,60,Forte
+95,Onix,77,"['Rock', 'Ground']",35,45,160,Médio
+96,Drowzee,66,['Psychic'],60,48,45,Médio
+97,Hypno,169,['Psychic'],85,73,70,Forte
+98,Krabby,65,['Water'],30,105,90,Médio
+99,Kingler,166,['Water'],55,130,115,Forte
+100,Voltorb,66,['Electric'],40,30,50,Médio

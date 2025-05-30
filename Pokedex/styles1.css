@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #ef5350;
+  color: white;
+  padding: 20px;
+  position: relative;
+  border-radius: 0 0 12px 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #d32f2f;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.menu a:hover {
+  background-color: #b71c1c;
+}
+
+#pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+#relatorio-container,
+#top5-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: transparent;
+  min-height: 80vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#carregar-mais {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+#carregar-mais:hover {
+  background-color: #e04848;
+}
+
+
+.pokemon-card,
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 15px;
+}
+
+.pokemon-card:hover,
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-color: #ef5350;
+}
+
+.pokemon-name,
+.card h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ef5350;
+  margin: 0;
+}
+
+.pokemon-id {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.pokemon-types,
+.card .pokemon-types {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pokemon-type {
+  display: inline-block;
+  background-color: #f1c40f;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
+.pokemon-stats,
+.card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #555;
+  margin: 0;
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  border-radius: 12px;
+}
+
+.card img {
+  display: none;
+}
+
+body {
+  background-image: url('/fundo.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+}
+
+.pokemon-card {
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 180px;
+  margin: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+  ;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.pokemon-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.pokemon-id {
+  font-weight: bold;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.pokemon-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d23c3c;
+  margin-bottom: 10px;
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s;
+}
+
+.pokemon-card:hover img {
+  transform: scale(1.1);
+}
+
+.pokemon-info {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.pokemon-info p {
+  margin: 4px 0;
+}
+/* Estilo tipo card de Pokémon real */
+
+.pokemon-card {
+  width: 260px;
+  background: #ffffff url('/fundo-carta.webp') no-repeat center center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-radius: 16px;
+  border: 13px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+.pokemon-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ccc;
+  color: #333;
+}
+
+.card-hp {
+  color: red;
+}
+
+.card-img {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-img img {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
+}
+
+.card-info {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.pokemon-type {
+  background-color: #555;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: white;
+}
+
+/* Cores por tipo */
+.pokemon-card[data-tipo="Fire"]   { border-color: #f08030; }
+.pokemon-card[data-tipo="Water"]  { border-color: #6890f0; }
+.pokemon-card[data-tipo="Grass"]  { border-color: #78c850; }
+.pokemon-card[data-tipo="Electric"] { border-color: #f8d030; }
+.pokemon-card[data-tipo="Psychic"]  { border-color: #f85888; }
+.pokemon-card[data-tipo="Fighting"] { border-color: #c03028; }
+.pokemon-card[data-tipo="Dragon"]   { border-color: #7038f8; }
+.pokemon-card[data-tipo="Poison"]   { border-color: #a040a0; }
+.pokemon-card[data-tipo="Ground"]   { border-color: #e0c068; }
+.pokemon-card[data-tipo="Bug"]      { border-color: #a8b820; }
+.pokemon-card[data-tipo="Flying"]   { border-color: #a890f0; }
+.pokemon-card[data-tipo="Ghost"]    { border-color: #705898; }
+.pokemon-card[data-tipo="Rock"]     { border-color: #b8a038; }
+.pokemon-card[data-tipo="Steel"]    { border-color: #b8b8d0; }
+.pokemon-card[data-tipo="Fairy"]    { border-color: #ee99ac; }
+.pokemon-card[data-tipo="Normal"]   { border-color: #a8a878; }
