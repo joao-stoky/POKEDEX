@@ -32,15 +32,13 @@ cd "Pokemons\projeto_python"
 python main.py
 ```
 
-## O que o projeto faz
+## O que o projeto faz:
 
 - Lê os dados de um arquivo CSV com informações dos Pokémons
 - Cria cards com nome, ID e imagem de cada Pokémon
 - Gera uma página HTML com todos os cards
 
-## Melhorias que posso fazer no futuro
-
-- Deixar a página mais bonita com CSS
-- Adicionar busca por nome ou tipo
-- Colocar filtros de tipos ou ordem
+## Melhorias que fiz:
+- Criei uma visualização de cards personalziados para o resultado da planilha dos 1100 pokemons.
+- Criei tambëm duas páginas no mesmo arquivo na pasta POKEDEX para a visualização das outras duas planilhas.
 
